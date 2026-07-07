@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NORTHARC — Mobile, AI & Data Engineering for early-stage teams</title>
+  <meta name="description" content="A small, founder-led engineering studio. We build mobile apps, AI integrations, and data pipelines for US startups — fixed scope, direct communication, no account managers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html">NORTH<span>ARC</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">menu</button>
+    <nav class="main-nav" id="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="status-line"><span class="dot"></span>Taking on new projects — Q3 2026</span>
+        <h1>Software that ships.<br>Data that holds up.</h1>
+        <p class="lede">NORTHARC is a small, founder-led engineering studio. We build mobile apps, AI integrations, and data pipelines for early-stage US teams — with fixed scope, direct communication, and no account managers in between.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html">Start a project</a>
+          <a class="btn btn-ghost" href="services.html">See what we build</a>
+        </div>
+      </div>
+      <div aria-hidden="true">
+        <svg class="hero-schematic" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
+          <text x="20" y="28">// system schematic</text>
+          <!-- sources -->
+          <rect class="node" x="20" y="60" width="110" height="40" rx="4"/>
+          <text x="34" y="84">app / product</text>
+          <rect class="node" x="20" y="130" width="110" height="40" rx="4"/>
+          <text x="34" y="154">events / apis</text>
+          <rect class="node" x="20" y="200" width="110" height="40" rx="4"/>
+          <text x="34" y="224">databases</text>
+          <!-- transform -->
+          <rect class="node" x="190" y="130" width="110" height="40" rx="4"/>
+          <text x="212" y="154">pipelines</text>
+          <!-- output -->
+          <rect class="node" x="300" y="40" width="100" height="40" rx="4" transform="translate(-40,20)"/>
+          <text x="276" y="84">ai models</text>
+          <rect class="node" x="260" y="200" width="140" height="40" rx="4"/>
+          <text x="284" y="224">decisions / users</text>
+          <!-- pipes -->
+          <path class="pipe" d="M130 80 C 160 80, 160 150, 190 150"/>
+          <path class="pipe" d="M130 150 L 190 150"/>
+          <path class="pipe" d="M130 220 C 160 220, 160 150, 190 150"/>
+          <path class="pipe" d="M300 150 C 320 150, 320 80, 260 80" transform="translate(60,0) scale(-1,1) translate(-360,0)"/>
+          <path class="pipe" d="M300 150 C 320 150, 320 220, 260 220" transform="translate(60,0) scale(-1,1) translate(-360,0)"/>
+          <!-- packets -->
+          <circle class="pkt" r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M130 80 C 160 80, 160 150, 190 150"/></circle>
+          <circle class="pkt" r="3"><animateMotion dur="3s" begin="1s" repeatCount="indefinite" path="M130 220 C 160 220, 160 150, 190 150"/></circle>
+          <circle class="pkt" r="3"><animateMotion dur="3s" begin="2s" repeatCount="indefinite" path="M130 150 L 190 150"/></circle>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES OVERVIEW -->
+  <section>
+    <div class="wrap">
+      <span class="eyebrow">// what we build</span>
+      <h2>Three things, done properly.</h2>
+      <p class="lede">We deliberately keep the service list short. Narrow scope is how a small team ships production-grade work.</p>
+      <div class="card-grid">
+        <div class="card reveal">
+          <span class="tag">01 — mobile</span>
+          <h3>Mobile App Development</h3>
+          <p>Android and cross-platform apps, from first build to Play Store release. Native performance where it matters, shared code where it doesn't.</p>
+          <a class="more" href="services.html#mobile">Details →</a>
+        </div>
+        <div class="card reveal">
+          <span class="tag">02 — ai</span>
+          <h3>AI Services & Integrations</h3>
+          <p>LLM features inside your existing product: retrieval, chat interfaces, document processing, workflow automation. Built to be measured, not demoed.</p>
+          <a class="more" href="services.html#ai">Details →</a>
+        </div>
+        <div class="card reveal">
+          <span class="tag">03 — data</span>
+          <h3>Data Engineering</h3>
+          <p>Pipelines, warehouses, and dashboards that make your data usable. Batch or streaming, sized for a startup budget — not an enterprise one.</p>
+          <a class="more" href="services.html#data">Details →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">// how we work</span>
+      <h2>A fixed process, in the open.</h2>
+      <p class="lede">You'll always know what stage the work is in, what's done, and what's next.</p>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="num">step 01</span>
+          <div>
+            <h3>Scope call</h3>
+            <p>A 30-minute call to understand the problem. If we're not the right fit, we'll say so on the call — not after a proposal.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="num">step 02</span>
+          <div>
+            <h3>Written proposal</h3>
+            <p>Fixed scope, fixed price, and a delivery timeline with buffer built in. What's included is listed; what's excluded is listed too.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="num">step 03</span>
+          <div>
+            <h3>Weekly builds</h3>
+            <p>Working software every week, not a big reveal at the end. You review in your timezone; we work in ours with a 4–5 hour US overlap.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="num">step 04</span>
+          <div>
+            <h3>Handover</h3>
+            <p>Code, documentation, deployment access, and a recorded walkthrough. You own everything. No lock-in, no retainer required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HONEST POSITIONING -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">// straight answer</span>
+      <h2>Why a new studio?</h2>
+      <div class="plain-block reveal">
+        <p><strong>We're early, and we're not going to hide it.</strong> No wall of client logos, no invented statistics. What you get instead: the founder writes the code, answers the emails, and is on every call.</p>
+        <p>That has a real advantage — your project is never handed to a junior team after the sales call, because there is no sales call and no junior team. It also means we take on a small number of projects at a time, and we say no when the fit is wrong.</p>
+        <p>If you'd rather work with a 200-person agency, that's a reasonable choice. If you want senior attention at a fraction of the cost, <a href="contact.html">email us</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK STRIP -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <span class="eyebrow">// tools</span>
+      <h2>The stack we work in.</h2>
+      <p class="lede">Boring, proven tools chosen for maintainability — full list on the services page.</p>
+      <div class="stack-grid">
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></div>
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" loading="lazy"><span>Kotlin</span></div>
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" loading="lazy"><span>Flutter</span></div>
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="" loading="lazy"><span>Airflow</span></div>
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" alt="" loading="lazy"><span>Spark</span></div>
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy"><span>PostgreSQL</span></div>
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy"><span>AWS</span></div>
+        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy"><span>Docker</span></div>
+      </div>
+      <p class="stack-note">$ see services.html for the full toolchain →</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <span class="eyebrow">// next step</span>
+        <h2>Tell us what you're building.</h2>
+        <p class="lede">One email. We reply within one business day with either questions or a call slot.</p>
+        <a class="contact-email" href="mailto:hello@northarc.dev">hello@northarc.dev</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="logo">NORTH<span>ARC</span></div>
+      <p>Founder-led engineering studio · Hyderabad, India · working with US teams</p>
+    </div>
+    <div class="fmono">
+      <div>IST core hours + 4–5h US overlap</div>
+      <div>© 2026 NORTHARC</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
