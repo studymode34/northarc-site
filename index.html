@@ -3,199 +3,279 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NORTHARC — Mobile, AI & Data Engineering for early-stage teams</title>
-  <meta name="description" content="A small, founder-led engineering studio. We build mobile apps, AI integrations, and data pipelines for US startups — fixed scope, direct communication, no account managers." />
+  <title>WAKEUPANDWORK — AI, Data Engineering & Analytics</title>
+  <meta name="description" content="Architecture and delivery for AI integrations, data engineering, and analytics systems designed for clarity, stability, and clean handoff." />
+  <meta name="theme-color" content="#f5f6f4" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WAKEUPANDWORK — AI, Data Engineering & Analytics" />
+  <meta property="og:description" content="Architecture and delivery for AI integrations, data engineering, and analytics systems designed for clarity, stability, and clean handoff." />
+  <meta property="og:image" content="assets/social-card.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="WAKEUPANDWORK — AI, Data Engineering & Analytics" />
+  <meta property="twitter:description" content="Architecture and delivery for AI integrations, data engineering, and analytics systems designed for clarity, stability, and clean handoff." />
+  <meta property="twitter:image" content="assets/social-card.svg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "WAKEUPANDWORK",
+      "description": "Architecture and delivery for AI integrations, data engineering, and analytics systems.",
+      "email": "hello@wakeupandwork.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "addressCountry": "India"
+      },
+      "serviceType": [
+        "AI Integrations",
+        "Data Engineering",
+        "Analytics"
+      ]
+    }
+  </script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html">NORTH<span>ARC</span></a>
+    <a class="logo" href="index.html">WAKEUP<span>&amp;WORK</span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">menu</button>
     <nav class="main-nav" id="nav">
       <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
-      <a href="contact.html" class="nav-cta">Start a project</a>
+      <a href="contact.html" class="nav-cta">Book review</a>
     </nav>
   </div>
 </header>
 
 <main>
-
-  <!-- HERO -->
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="status-line"><span class="dot"></span>Taking on new projects — Q3 2026</span>
-        <h1>Software that ships.<br>Data that holds up.</h1>
-        <p class="lede">NORTHARC is a small, founder-led engineering studio. We build mobile apps, AI integrations, and data pipelines for early-stage US teams — with fixed scope, direct communication, and no account managers in between.</p>
+        <h1>AI, data, and analytics systems designed for clarity, stability, and clean handoff.</h1>
+        <p class="lede">WAKEUPANDWORK works with teams that need architecture and delivery to be shaped together. The focus is on systems that are understandable, maintainable, and ready for internal ownership.</p>
+        <ul class="hero-points">
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5"/></svg>
+            <span>Architecture reviews grounded in operating reality, not generic recommendations</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5"/></svg>
+            <span>Delivery built around maintainability, observability, and sensible platform choices</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 6.5 12 13 4.5"/></svg>
+            <span>Documentation and handoff prepared alongside the implementation work</span>
+          </li>
+        </ul>
         <div class="btn-row">
-          <a class="btn btn-primary" href="contact.html">Start a project</a>
-          <a class="btn btn-ghost" href="services.html">See what we build</a>
+          <a class="btn btn-primary" href="contact.html">Book an architecture review</a>
+          <a class="btn btn-ghost" href="services.html">View services</a>
         </div>
       </div>
-      <div aria-hidden="true">
-        <svg class="hero-schematic" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
-          <text x="20" y="28">// system schematic</text>
-          <!-- sources -->
-          <rect class="node" x="20" y="60" width="110" height="40" rx="4"/>
-          <text x="34" y="84">app / product</text>
-          <rect class="node" x="20" y="130" width="110" height="40" rx="4"/>
-          <text x="34" y="154">events / apis</text>
-          <rect class="node" x="20" y="200" width="110" height="40" rx="4"/>
-          <text x="34" y="224">databases</text>
-          <!-- transform -->
-          <rect class="node" x="190" y="130" width="110" height="40" rx="4"/>
-          <text x="212" y="154">pipelines</text>
-          <!-- output -->
-          <rect class="node" x="300" y="40" width="100" height="40" rx="4" transform="translate(-40,20)"/>
-          <text x="276" y="84">ai models</text>
-          <rect class="node" x="260" y="200" width="140" height="40" rx="4"/>
-          <text x="284" y="224">decisions / users</text>
-          <!-- pipes -->
-          <path class="pipe" d="M130 80 C 160 80, 160 150, 190 150"/>
-          <path class="pipe" d="M130 150 L 190 150"/>
-          <path class="pipe" d="M130 220 C 160 220, 160 150, 190 150"/>
-          <path class="pipe" d="M300 150 C 320 150, 320 80, 260 80" transform="translate(60,0) scale(-1,1) translate(-360,0)"/>
-          <path class="pipe" d="M300 150 C 320 150, 320 220, 260 220" transform="translate(60,0) scale(-1,1) translate(-360,0)"/>
-          <!-- packets -->
-          <circle class="pkt" r="3"><animateMotion dur="3s" repeatCount="indefinite" path="M130 80 C 160 80, 160 150, 190 150"/></circle>
-          <circle class="pkt" r="3"><animateMotion dur="3s" begin="1s" repeatCount="indefinite" path="M130 220 C 160 220, 160 150, 190 150"/></circle>
-          <circle class="pkt" r="3"><animateMotion dur="3s" begin="2s" repeatCount="indefinite" path="M130 150 L 190 150"/></circle>
-        </svg>
+      <div class="hero-panel" aria-hidden="true">
+        <div class="panel-head">Reference architecture</div>
+        <div class="panel-grid">
+          <div class="panel-col">
+            <div class="panel-label">Inputs</div>
+            <div class="panel-node">Application events</div>
+            <div class="panel-node">Third-party platforms</div>
+            <div class="panel-node">Operational data sources</div>
+          </div>
+          <div class="panel-col">
+            <div class="panel-label">Core platform</div>
+            <div class="panel-node">Ingestion and orchestration</div>
+            <div class="panel-node">Transformation and quality checks</div>
+            <div class="panel-node">Warehouse and governed models</div>
+          </div>
+          <div class="panel-col">
+            <div class="panel-label">Outputs</div>
+            <div class="panel-node">AI workflows and services</div>
+            <div class="panel-node">Dashboards and metrics</div>
+            <div class="panel-node">Reporting and operating views</div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <span>AWS</span>
+          <span>Python</span>
+          <span>dbt</span>
+          <span>Snowflake</span>
+          <span>Airflow</span>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- SERVICES OVERVIEW -->
-  <section>
+  <section style="padding-top:0">
     <div class="wrap">
-      <span class="eyebrow">// what we build</span>
-      <h2>Three things, done properly.</h2>
-      <p class="lede">We deliberately keep the service list short. Narrow scope is how a small team ships production-grade work.</p>
+      <h2>What the engagement is designed to deliver.</h2>
+      <p class="lede">The work is structured around architecture clarity, implementation quality, and a handoff that leaves the internal team with a system they can understand and extend.</p>
+      <div class="fact-grid">
+        <div class="fact reveal">
+          <span class="n">1 <em>day</em></span>
+          <p>Typical response window for an initial architecture enquiry.</p>
+        </div>
+        <div class="fact reveal">
+          <span class="n">4–5 <em>hrs</em></span>
+          <p>Overlap available for review sessions, planning, and delivery decisions.</p>
+        </div>
+        <div class="fact reveal">
+          <span class="n">100<em>%</em></span>
+          <p>Code, documentation, and operating context remain with the client.</p>
+        </div>
+        <div class="fact reveal">
+          <span class="n">3</span>
+          <p>Core service areas: AI systems, data engineering, and analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="lede">Each service area is approached as part of a wider operating system, not in isolation.</p>
       <div class="card-grid">
         <div class="card reveal">
-          <span class="tag">01 — mobile</span>
-          <h3>Mobile App Development</h3>
-          <p>Android and cross-platform apps, from first build to Play Store release. Native performance where it matters, shared code where it doesn't.</p>
-          <a class="more" href="services.html#mobile">Details →</a>
-        </div>
-        <div class="card reveal">
-          <span class="tag">02 — ai</span>
-          <h3>AI Services & Integrations</h3>
-          <p>LLM features inside your existing product: retrieval, chat interfaces, document processing, workflow automation. Built to be measured, not demoed.</p>
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M10 3v3M14 3v3M10 18v3M14 18v3M3 10h3M3 14h3M18 10h3M18 14h3"/><rect x="10" y="10" width="4" height="4" rx="1"/></svg>
+          </div>
+          <h3>AI systems and integrations</h3>
+          <p>Retrieval, workflow automation, document pipelines, and product-facing AI features with evaluation, guardrails, and operating context built in.</p>
           <a class="more" href="services.html#ai">Details →</a>
         </div>
         <div class="card reveal">
-          <span class="tag">03 — data</span>
-          <h3>Data Engineering</h3>
-          <p>Pipelines, warehouses, and dashboards that make your data usable. Batch or streaming, sized for a startup budget — not an enterprise one.</p>
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.66 3.58 3 8 3s8-1.34 8-3v-13"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+          </div>
+          <h3>Data engineering</h3>
+          <p>Data movement, orchestration, modeling, and observability for teams that need dependable platforms without unnecessary complexity.</p>
           <a class="more" href="services.html#data">Details →</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW WE WORK -->
-  <section style="padding-top:0">
-    <div class="wrap">
-      <span class="eyebrow">// how we work</span>
-      <h2>A fixed process, in the open.</h2>
-      <p class="lede">You'll always know what stage the work is in, what's done, and what's next.</p>
-      <div class="steps">
-        <div class="step reveal">
-          <span class="num">step 01</span>
-          <div>
-            <h3>Scope call</h3>
-            <p>A 30-minute call to understand the problem. If we're not the right fit, we'll say so on the call — not after a proposal.</p>
+        <div class="card reveal">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="3.6" height="9"/><rect x="10.2" y="5" width="3.6" height="15"/><rect x="15.4" y="14" width="3.6" height="6"/></svg>
           </div>
-        </div>
-        <div class="step reveal">
-          <span class="num">step 02</span>
-          <div>
-            <h3>Written proposal</h3>
-            <p>Fixed scope, fixed price, and a delivery timeline with buffer built in. What's included is listed; what's excluded is listed too.</p>
-          </div>
-        </div>
-        <div class="step reveal">
-          <span class="num">step 03</span>
-          <div>
-            <h3>Weekly builds</h3>
-            <p>Working software every week, not a big reveal at the end. You review in your timezone; we work in ours with a 4–5 hour US overlap.</p>
-          </div>
-        </div>
-        <div class="step reveal">
-          <span class="num">step 04</span>
-          <div>
-            <h3>Handover</h3>
-            <p>Code, documentation, deployment access, and a recorded walkthrough. You own everything. No lock-in, no retainer required.</p>
-          </div>
+          <h3>Analytics and reporting</h3>
+          <p>Metrics layers, dashboards, and reporting systems built on modeled data so teams can work from one trusted view of performance.</p>
+          <a class="more" href="services.html#analytics">Details →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HONEST POSITIONING -->
   <section style="padding-top:0">
     <div class="wrap">
-      <span class="eyebrow">// straight answer</span>
-      <h2>Why a new studio?</h2>
-      <div class="plain-block reveal">
-        <p><strong>We're early, and we're not going to hide it.</strong> No wall of client logos, no invented statistics. What you get instead: the founder writes the code, answers the emails, and is on every call.</p>
-        <p>That has a real advantage — your project is never handed to a junior team after the sales call, because there is no sales call and no junior team. It also means we take on a small number of projects at a time, and we say no when the fit is wrong.</p>
-        <p>If you'd rather work with a 200-person agency, that's a reasonable choice. If you want senior attention at a fraction of the cost, <a href="contact.html">email us</a>.</p>
+      <h2>How the work is approached.</h2>
+      <p class="lede">The emphasis is on clear scope, reviewable delivery, and documentation prepared in parallel with implementation.</p>
+      <div class="steps-flow">
+        <div class="step-col reveal">
+          <div class="track"><span class="step-dot">01</span></div>
+          <h3>Architecture review</h3>
+          <p>The existing system, delivery context, and operating constraints are reviewed before scope is shaped.</p>
+        </div>
+        <div class="step-col reveal">
+          <div class="track"><span class="step-dot">02</span></div>
+          <h3>Structured scope</h3>
+          <p>Recommendations are translated into a written scope with boundaries, assumptions, and delivery priorities.</p>
+        </div>
+        <div class="step-col reveal">
+          <div class="track"><span class="step-dot">03</span></div>
+          <h3>Reviewable delivery</h3>
+          <p>Progress is shared through working outputs and implementation notes so decisions can be made with context.</p>
+        </div>
+        <div class="step-col reveal">
+          <div class="track"><span class="step-dot">04</span></div>
+          <h3>Clean handoff</h3>
+          <p>Code, documentation, and operational context are delivered together so internal teams can take ownership smoothly.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- STACK STRIP -->
   <section style="padding-top:0">
     <div class="wrap">
-      <span class="eyebrow">// tools</span>
-      <h2>The stack we work in.</h2>
-      <p class="lede">Boring, proven tools chosen for maintainability — full list on the services page.</p>
-      <div class="stack-grid">
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></div>
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" loading="lazy"><span>Kotlin</span></div>
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" loading="lazy"><span>Flutter</span></div>
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="" loading="lazy"><span>Airflow</span></div>
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" alt="" loading="lazy"><span>Spark</span></div>
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy"><span>PostgreSQL</span></div>
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy"><span>AWS</span></div>
-        <div class="stack-item reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy"><span>Docker</span></div>
+      <h2>Technology stack by platform layer.</h2>
+      <p class="lede">Tools are grouped by where they sit in the system so the architecture reads clearly.</p>
+      <div class="stack-map">
+        <div class="stack-col reveal">
+          <div class="stack-stage">Ingestion</div>
+          <div class="stack-grid compact">
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="" loading="lazy"><span>Kafka</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy"><span>AWS</span></div>
+          </div>
+        </div>
+        <div class="stack-col reveal">
+          <div class="stack-stage">Transformation</div>
+          <div class="stack-grid compact">
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="" loading="lazy"><span>Airflow</span></div>
+            <div class="stack-item"><img src="assets/dbt-mark.svg" alt="" loading="lazy"><span>dbt</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachespark/apachespark-original.svg" alt="" loading="lazy"><span>Spark</span></div>
+          </div>
+        </div>
+        <div class="stack-col reveal">
+          <div class="stack-stage">Storage</div>
+          <div class="stack-grid compact">
+            <div class="stack-item"><img src="https://cdn.simpleicons.org/snowflake/29B5E8" alt="" loading="lazy"><span>Snowflake</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy"><span>PostgreSQL</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy"><span>Docker</span></div>
+          </div>
+        </div>
+        <div class="stack-col reveal">
+          <div class="stack-stage">Consumption</div>
+          <div class="stack-grid compact">
+            <div class="stack-item"><img src="https://cdn.simpleicons.org/openai/412991" alt="" loading="lazy"><span>OpenAI</span></div>
+            <div class="stack-item"><img src="https://cdn.simpleicons.org/metabase/509EE3" alt="" loading="lazy"><span>Metabase</span></div>
+            <div class="stack-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="" loading="lazy"><span>Streamlit</span></div>
+          </div>
+        </div>
       </div>
-      <p class="stack-note">$ see services.html for the full toolchain →</p>
     </div>
   </section>
 
-  <!-- CTA -->
   <section style="padding-top:0">
     <div class="wrap">
-      <div class="contact-card reveal">
-        <span class="eyebrow">// next step</span>
-        <h2>Tell us what you're building.</h2>
-        <p class="lede">One email. We reply within one business day with either questions or a call slot.</p>
-        <a class="contact-email" href="mailto:hello@northarc.dev">hello@northarc.dev</a>
+      <div class="quote-band reveal">
+        <p>Engagements are scoped carefully, delivered in the open, and documented so the result stays useful long after the final review call.</p>
       </div>
     </div>
   </section>
 
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Book an architecture review.</h2>
+        <p class="lede">Share the current system, the delivery challenge, or the initiative under discussion. The next step is a focused review conversation shaped around your context.</p>
+        <a class="contact-email" href="mailto:hello@wakeupandwork.dev">hello@wakeupandwork.dev</a>
+        <p class="fine">Architecture review · scoped delivery · clean documentation</p>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <div>
-      <div class="logo">NORTH<span>ARC</span></div>
-      <p>Founder-led engineering studio · Hyderabad, India · working with US teams</p>
+    <div class="foot-simple">
+      <div>
+        <div class="logo">WAKEUP<span>&amp;WORK</span></div>
+        <p>Architecture and delivery for AI, data, and analytics systems.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="fmono">
-      <div>IST core hours + 4–5h US overlap</div>
-      <div>© 2026 NORTHARC</div>
+    <div class="foot-bottom">
+      <div>© 2026 WAKEUPANDWORK</div>
+      <div><a href="mailto:hello@wakeupandwork.dev">hello@wakeupandwork.dev</a></div>
     </div>
   </div>
 </footer>

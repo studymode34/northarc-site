@@ -1,23 +1,25 @@
-# NORTHARC — studio website
+# WAKEUPANDWORK — studio website
 
 Static, dependency-free website for a founder-led IT services studio.
 Three pages: `index.html`, `services.html`, `contact.html`.
 
-## Rename the company
+## Current setup
 
-"NORTHARC" is a placeholder. To rename:
+The site is now branded as `WAKEUPANDWORK` and uses these local assets:
 
-1. Find-replace `NORTHARC` and `NORTH<span>ARC</span>` in all three `.html` files
-2. Replace `hello@northarc.dev` with the real email (3 files)
-3. Update the LinkedIn URL in `contact.html`
-4. Update `<title>` and `meta description` tags per page
+1. Shared brand markup uses `WAKEUP<span>&amp;WORK</span>`
+2. Contact links point to `hello@wakeupandwork.dev`
+3. Favicon, social preview, and the dbt logo live in `assets/`
+4. The contact page includes a static brief form that opens the user's email app with a prefilled message
+
+If you want to swap to a real production domain or inbox later, update the email address and page metadata in the three HTML files plus `js/main.js`.
 
 ## Run locally
 
 Open `index.html` in a browser, or:
 
 ```bash
-python3 -m http.server 8000
+python3 -m http.server 4173
 ```
 
 ## Deploy

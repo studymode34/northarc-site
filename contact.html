@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — NORTHARC</title>
-  <meta name="description" content="Start a project with NORTHARC. One email, a reply within one business day." />
+  <title>Contact — WAKEUPANDWORK</title>
+  <meta name="description" content="Book an architecture review with WAKEUPANDWORK. Share the current system or delivery concern and receive a thoughtful reply within one business day." />
+  <meta name="theme-color" content="#f5f6f4" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — WAKEUPANDWORK" />
+  <meta property="og:description" content="Share the current system or delivery concern and receive a thoughtful reply within one business day." />
+  <meta property="og:image" content="assets/social-card.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Contact — WAKEUPANDWORK" />
+  <meta property="twitter:description" content="Share the current system or delivery concern and receive a thoughtful reply within one business day." />
+  <meta property="twitter:image" content="assets/social-card.svg" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -14,66 +24,166 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="index.html">NORTH<span>ARC</span></a>
+    <a class="logo" href="index.html">WAKEUP<span>&amp;WORK</span></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">menu</button>
     <nav class="main-nav" id="nav">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="contact.html" class="active">Contact</a>
-      <a href="contact.html" class="nav-cta">Start a project</a>
+      <a href="contact.html" class="nav-cta">Book review</a>
     </nav>
   </div>
 </header>
 
 <main>
-
-  <div class="hero" style="padding-bottom:40px">
+  <div class="hero contact-hero">
     <div class="wrap">
-      <span class="eyebrow">// contact</span>
-      <h1>One email starts it.</h1>
-      <p class="lede" style="margin-top:20px">No forms, no calendars, no qualification funnels. Write to the founder directly.</p>
+      <h1>Book an architecture review.</h1>
+      <p class="lede" style="margin-top:20px">Share the system, initiative, or delivery concern that needs review. The first exchange is meant to establish context quickly and identify the most useful next step.</p>
     </div>
   </div>
 
   <section style="padding-top:0">
-    <div class="wrap">
-      <div class="contact-card reveal">
-        <span class="eyebrow">// write to</span>
-        <a class="contact-email" href="mailto:hello@northarc.dev">hello@northarc.dev</a>
-        <div class="contact-meta">
-          <div>→ reply within 1 business day</div>
-          <div>→ read by the founder, not a bot</div>
-          <div>→ IST core hours, 4–5h overlap with US mornings/evenings</div>
+    <div class="wrap contact-layout">
+      <div class="contact-intro reveal">
+        <div class="contact-card">
+          <h2>Direct contact</h2>
+          <a class="contact-email" href="mailto:hello@wakeupandwork.dev">hello@wakeupandwork.dev</a>
+          <div class="contact-meta">
+            <div>Reply within one business day</div>
+            <div>Direct contact with the person shaping the work</div>
+            <div>Review sessions and planning overlap available for US teams</div>
+          </div>
         </div>
-
-        <div class="checklist">
-          <h3>What to include (keeps the back-and-forth short):</h3>
-          <ol>
-            <li>What you're building, in two or three sentences</li>
-            <li>Which lane it's in — mobile, AI, or data</li>
-            <li>Rough timeline and budget range, if you have one</li>
-            <li>Anything already built we should know about</li>
-          </ol>
+        <div class="plain-block contact-note">
+          <p><strong>What to include.</strong> A short description of the system, the area that needs review, the relevant timing, and anything in the existing stack that the recommendation should respect.</p>
         </div>
       </div>
 
-      <div class="plain-block reveal" style="margin-top:28px">
-        <p><strong>Prefer LinkedIn?</strong> That works too — <a href="https://www.linkedin.com/" rel="noopener">message the founder directly</a>. Same person answers either way.</p>
+      <div class="brief-shell reveal">
+        <div class="brief-card">
+          <h2>Prepare a structured review brief.</h2>
+          <p class="lede">This form prepares an email draft in your local mail app so the first exchange starts with the right level of context.</p>
+          <form class="brief-form" data-brief-form data-email="hello@wakeupandwork.dev">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Work email</span>
+              <input type="email" name="email" autocomplete="email" placeholder="you@company.com" required />
+            </label>
+            <label>
+              <span>Company or product</span>
+              <input type="text" name="company" autocomplete="organization" placeholder="Company or product name" required />
+            </label>
+            <label>
+              <span>Review area</span>
+              <select name="lane" required>
+                <option value="">Choose one</option>
+                <option>AI systems</option>
+                <option>Data engineering</option>
+                <option>Analytics</option>
+                <option>Mixed scope</option>
+              </select>
+            </label>
+            <label class="full">
+              <span>What needs review?</span>
+              <textarea name="summary" rows="6" placeholder="Describe the current system, the delivery issue, or the initiative under discussion." required></textarea>
+            </label>
+            <label>
+              <span>Timeline</span>
+              <input type="text" name="timeline" placeholder="e.g. this month, next quarter, flexible" />
+            </label>
+            <label>
+              <span>Budget context</span>
+              <select name="budget">
+                <option value="">Choose one</option>
+                <option>Under $5k</option>
+                <option>$5k – $15k</option>
+                <option>$15k – $30k</option>
+                <option>$30k+</option>
+                <option>Need help scoping</option>
+              </select>
+            </label>
+            <label class="full">
+              <span>Existing stack or constraints</span>
+              <textarea name="stack" rows="4" placeholder="Repos, tools already in use, important dependencies, or existing constraints."></textarea>
+            </label>
+            <div class="form-actions full">
+              <button class="btn btn-primary" type="submit">Prepare architecture review email</button>
+              <p class="fine">This uses your local email app.</p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>What happens next.</h2>
+      <div class="steps-flow three">
+        <div class="step-col reveal">
+          <div class="track"><span class="step-dot">01</span></div>
+          <h3>Initial context review</h3>
+          <p>The first message provides enough context to understand the shape of the system and the nature of the review required.</p>
+        </div>
+        <div class="step-col reveal">
+          <div class="track"><span class="step-dot">02</span></div>
+          <h3>Thoughtful response</h3>
+          <p>The reply usually includes clarifying questions, a suggested review conversation, or a candid note if the fit is not right.</p>
+        </div>
+        <div class="step-col reveal">
+          <div class="track"><span class="step-dot">03</span></div>
+          <h3>Review to written scope</h3>
+          <p>If the fit is strong, the next step is a review discussion followed by a written scope and recommended delivery path.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2>Common questions.</h2>
+      <div class="faq">
+        <details>
+          <summary>Who owns the code and IP?</summary>
+          <p>You do. Code lives in your repositories, deploys to your accounts, and remains under your control.</p>
+        </details>
+        <details>
+          <summary>Will you sign an NDA?</summary>
+          <p>Yes. An NDA can be signed before any sensitive detail is shared.</p>
+        </details>
+        <details>
+          <summary>How does the timezone work in practice?</summary>
+          <p>Work is coordinated around overlapping review windows with US teams, while deeper implementation continues asynchronously.</p>
+        </details>
+        <details>
+          <summary>How is work priced?</summary>
+          <p>Most engagements are structured as fixed-scope projects or clearly defined retained support, depending on the shape of the work.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <div>
-      <div class="logo">NORTH<span>ARC</span></div>
-      <p>Founder-led engineering studio · Hyderabad, India · working with US teams</p>
+    <div class="foot-simple">
+      <div>
+        <div class="logo">WAKEUP<span>&amp;WORK</span></div>
+        <p>Architecture and delivery for AI, data, and analytics systems.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="fmono">
-      <div>IST core hours + 4–5h US overlap</div>
-      <div>© 2026 NORTHARC</div>
+    <div class="foot-bottom">
+      <div>© 2026 WAKEUPANDWORK</div>
+      <div><a href="mailto:hello@wakeupandwork.dev">hello@wakeupandwork.dev</a></div>
     </div>
   </div>
 </footer>
