@@ -65,6 +65,6 @@ document.querySelectorAll('[data-brief-form]').forEach((form) => {
       values.stack || ''
     ].join('\n');
 
-    window.location.href = `mailto:${encodeURIComponent(inbox)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${inbox}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 });

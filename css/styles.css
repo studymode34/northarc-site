@@ -537,6 +537,7 @@ h3 { font-size: 1.18rem; font-weight: 600; margin-bottom: 8px; }
   .steps-flow.three {
     grid-template-columns: 1fr;
   }
+  .step-col .track::before { display: none; }
 }
 
 @media (max-width: 860px) {
@@ -553,7 +554,6 @@ h3 { font-size: 1.18rem; font-weight: 600; margin-bottom: 8px; }
     column-gap: 16px;
   }
   .step-col .track { grid-row: 1 / 3; align-items: flex-start; margin-bottom: 0; height: auto; }
-  .step-col .track::before { display: none; }
   .step-col h3, .step-col p { grid-column: 2; }
   nav.main-nav {
     display: none;
