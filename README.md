@@ -1,14 +1,14 @@
-# WAKEUPANDWORK — studio website
+# VASARASOLUTIONS — studio website
 
 Static, dependency-free website for a founder-led IT services studio.
 Three pages: `index.html`, `services.html`, `contact.html`.
 
 ## Current setup
 
-The site is now branded as `WAKEUPANDWORK` and uses these local assets:
+The site is now branded as `VASARASOLUTIONS` and uses these local assets:
 
-1. Shared brand markup uses `WAKEUP<span>&amp;WORK</span>`
-2. Contact links point to `hello@wakeupandwork.dev`
+1. Shared brand markup uses `VASARA<span>SOLUTIONS</span>`
+2. Contact links point to `hello@vasarasolutions.dev`
 3. Favicon, social preview, and the dbt logo live in `assets/`
 4. The contact page includes a static brief form that opens the user's email app with a prefilled message
 
