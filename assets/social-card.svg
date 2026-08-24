@@ -8,7 +8,7 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="72" y="72" width="1056" height="486" rx="26" fill="#ffffff" stroke="#d9dedb" stroke-width="2"/>
   <text x="112" y="164" fill="#24557e" font-family="'IBM Plex Mono', monospace" font-size="28">// founder-led engineering</text>
-  <text x="112" y="258" fill="#10161c" font-family="'Schibsted Grotesk', sans-serif" font-size="74" font-weight="700">WAKEUP<tspan fill="#24557e">&amp;WORK</tspan></text>
+  <text x="112" y="258" fill="#10161c" font-family="'Schibsted Grotesk', sans-serif" font-size="74" font-weight="700">VASARA<tspan fill="#24557e">SOLUTIONS</tspan></text>
   <text x="112" y="338" fill="#10161c" font-family="'Schibsted Grotesk', sans-serif" font-size="54" font-weight="700">AI integrations, data engineering,</text>
   <text x="112" y="404" fill="#10161c" font-family="'Schibsted Grotesk', sans-serif" font-size="54" font-weight="700">&amp; analytics built to survive production.</text>
   <text x="112" y="490" fill="#55616c" font-family="'Instrument Sans', sans-serif" font-size="32">Fixed scope. Weekly builds. Founder on every call.</text>
