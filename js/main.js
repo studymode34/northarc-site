@@ -47,7 +47,7 @@ document.querySelectorAll('[data-brief-form]').forEach((form) => {
     event.preventDefault();
 
     const data = new FormData(form);
-    const inbox = form.getAttribute('data-email') || 'hello@wakeupandwork.dev';
+    const inbox = form.getAttribute('data-email') || 'hello@vasarasolutions.dev';
     const values = Object.fromEntries(data.entries());
     const subject = `Project brief: ${values.company || 'New inquiry'} (${values.lane || 'General'})`;
     const body = [
